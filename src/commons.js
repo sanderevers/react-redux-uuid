@@ -5,7 +5,6 @@ import { NAME_KEY, UUID_KEY } from './constants';
 import isPlainObject from 'lodash.isplainobject';
 import isNil from 'lodash.isnil';
 import get from 'lodash.get';
-import compose from 'lodash.flowright';
 
 export const createUUID = () => v4();
 export const getUUIDState = (state, name, ...args) => get(state, ['uuid', name, ...args]);
